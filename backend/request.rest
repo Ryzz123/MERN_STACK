@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/63c66d9bd01c713a5070a2e8
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Ananda",
+    "email": "ananda@gmail.com",
+    "gender": "Female"
+}
+
+###
+PATCH  http://localhost:5000/users/63c66d9bd01c713a5070a2e8
+Content-Type: application/json
+
+{
+    "name" : "Jhon",
+    "email": "jhon@gmail.com",
+    "gender": "male"
+}
+
+###
+DELETE http://localhost:5000/users/63c66dcbd01c713a5070a2eb
